@@ -98,12 +98,12 @@ public class Main {
                         if(rabbitMeters > turtleMeters){
                             rabbit.setPriority(Thread.NORM_PRIORITY -1);
                             turtle.setPriority(Thread .NORM_PRIORITY +1);
-                            System.out.println("Черепаха отстает, преоритеты скоректированны");
+                            System.out.println("Черепаха отстает, приоритеты скоректированны");
                         }
                         else {
                             rabbit.setPriority(Thread.NORM_PRIORITY +1);
                             turtle.setPriority(Thread .NORM_PRIORITY -1);
-                            System.out.println("Кролик отстает, преоритеты скоректированны");
+                            System.out.println("Кролик отстает, приоритеты скоректированны");
                         }
                 } else if (difference <= 5) {
                         rabbit.setPriority(Thread.NORM_PRIORITY);
